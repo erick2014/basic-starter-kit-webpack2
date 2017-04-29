@@ -1,4 +1,4 @@
-modules.exports={
+module.exports={
  hi:"Oh hi there",
  event:'upssala js'
 }

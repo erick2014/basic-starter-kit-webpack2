@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build":"rimraf dist && webpack src/index.js dist/bundle.js"
+    "build": "rimraf dist && webpack src/index.js dist/bundle.js",
+		"start":"node server.js"
   },
   "author": "erick",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.15.2",
     "rimraf": "^2.6.1",
     "webpack": "^2.1.0-beta.25"
   }
