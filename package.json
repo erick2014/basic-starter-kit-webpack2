@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && webpack src/index.js dist/bundle.js",
+    "build-test": "rimraf dist && webpack src/index.js dist/bundle.js --watch",
 		"start":"node server.js",
-		"postinstall":"rimraf dist && webpack src/index.js dist/bundle.js"
+		"postinstall":"npm run-script build"
   },
   "author": "erick",
   "license": "ISC",
